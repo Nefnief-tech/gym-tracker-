@@ -1,0 +1,45 @@
+{
+  "id": "full_body_beginner",
+  "name": "Full Body Beginner",
+  "description": "3-day full body workout perfect for beginners",
+  "workoutIds": ["full_body_a", "full_body_b", "full_body_c"],
+  "workouts": [
+    {
+      "id": "full_body_a",
+      "name": "Full Body A",
+      "description": "Complete full body workout focusing on compound movements",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "exercise": {
+            "id": "squat",
+            "name": "Squat",
+            "description": "Fundamental leg exercise",
+            "category": "strength",
+            "muscleGroup": "legs",
+            "equipment": "barbell",
+            "instructions": "Stand with feet shoulder-width apart, squat down, stand up",
+            "images": []
+          },
+          "sets": [
+            {"reps": 12, "weight": 0, "duration": 0, "completed": false},
+            {"reps": 12, "weight": 0, "duration": 0, "completed": false},
+            {"reps": 12, "weight": 0, "duration": 0, "completed": false}
+          ],
+          "restTime": 60,
+          "notes": ""
+        }
+      ],
+      "estimatedDuration": 45,
+      "difficulty": "beginner",
+      "tags": ["full_body", "beginner"],
+      "lastPerformed": null,
+      "timesPerformed": 0
+    }
+  ],
+  "daysPerWeek": 3,
+  "planType": "full_body",
+  "isPredefined": true,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "lastModified": null
+}

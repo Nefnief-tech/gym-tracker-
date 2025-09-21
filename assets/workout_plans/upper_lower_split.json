@@ -1,0 +1,45 @@
+{
+  "id": "upper_lower_split",
+  "name": "Upper/Lower Split",
+  "description": "4-day split alternating between upper body and lower body workouts",
+  "workoutIds": ["upper_body_1", "lower_body_1", "upper_body_2", "lower_body_2"],
+  "workouts": [
+    {
+      "id": "upper_body_1",
+      "name": "Upper Body A",
+      "description": "Focus on chest, shoulders, and triceps",
+      "exercises": [
+        {
+          "exerciseId": "bench_press",
+          "exercise": {
+            "id": "bench_press",
+            "name": "Bench Press",
+            "description": "Classic chest exercise using a barbell",
+            "category": "strength",
+            "muscleGroup": "chest",
+            "equipment": "barbell",
+            "instructions": "Lie on bench, grip barbell, lower to chest, press up",
+            "images": []
+          },
+          "sets": [
+            {"reps": 8, "weight": 0, "duration": 0, "completed": false},
+            {"reps": 8, "weight": 0, "duration": 0, "completed": false},
+            {"reps": 8, "weight": 0, "duration": 0, "completed": false}
+          ],
+          "restTime": 90,
+          "notes": ""
+        }
+      ],
+      "estimatedDuration": 75,
+      "difficulty": "intermediate",
+      "tags": ["upper_body", "strength"],
+      "lastPerformed": null,
+      "timesPerformed": 0
+    }
+  ],
+  "daysPerWeek": 4,
+  "planType": "upper_lower",
+  "isPredefined": true,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "lastModified": null
+}
