@@ -7,6 +7,7 @@ import 'workouts_screen.dart';
 import 'calendar_screen.dart';
 import 'workout_plans_screen.dart';
 import 'profile_screen.dart';
+import 'active_workout_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -166,7 +167,11 @@ class HomeTab extends StatelessWidget {
                           ),
                           ElevatedButton(
                             onPressed: () {
-                              // TODO: Navigate to active workout
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => const ActiveWorkoutScreen(),
+                                ),
+                              );
                             },
                             child: const Text('Continue'),
                           ),

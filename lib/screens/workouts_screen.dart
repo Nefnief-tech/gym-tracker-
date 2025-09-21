@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../services/workout_service.dart';
 import '../models/workout.dart';
 import '../widgets/workout_card.dart';
+import 'active_workout_screen.dart';
 
 class WorkoutsScreen extends StatefulWidget {
   const WorkoutsScreen({Key? key}) : super(key: key);
@@ -359,7 +360,11 @@ class _WorkoutsScreenState extends State<WorkoutsScreen> {
         action: SnackBarAction(
           label: 'View',
           onPressed: () {
-            // TODO: Navigate to active workout screen
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const ActiveWorkoutScreen(),
+              ),
+            );
           },
         ),
       ),
